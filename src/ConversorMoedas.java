@@ -8,8 +8,8 @@ import java.net.http.HttpResponse;
 import java.io.IOException;
 
 public class ConversorMoedas {
-
-    private static final String API_URL = "https://v6.exchangerate-api.com/v6/8bf7db8d7ae625d8db0180de/latest/"; // api q retorna valores das moedas e suas siglas
+    private static final string APIKEY = "SUA API KEY AQUI"
+    private static final String API_URL = "https://v6.exchangerate-api.com/v6/8bf7db8d7"+APIKEY+"/latest/"; // api q retorna valores das moedas e suas siglas
     public double converterMoeda(String moedaOrigem, String moedaDestino, double valor) throws IOException, InterruptedException {
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder()
